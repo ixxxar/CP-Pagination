@@ -1,6 +1,7 @@
 import React from "react";
 import BookMark from "./bookmarks";
 import Qualitie from "./qualities";
+import PropTypes from "prop-types";
 
 const User = (props) => {
   const handleDelete = () => {
@@ -36,4 +37,5 @@ const User = (props) => {
     </tr>
   );
 };
+
 export default User;

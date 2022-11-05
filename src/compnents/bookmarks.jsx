@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const BookMark = (props) => {
   return props.status ? (
@@ -10,6 +11,10 @@ const BookMark = (props) => {
       <i className="bi bi-bookmark-star"></i>
     </button>
   );
+};
+
+BookMark.propTypes = {
+  status: PropTypes.bool,
 };
 
 export default BookMark;
